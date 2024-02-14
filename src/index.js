@@ -50,10 +50,13 @@ const render = () => {
   newEvent.append(header);
 
   let text = document.createElement("p");
-  text.innerText = "2/24/2024 - 5 PM";
+  text.innerText = "Saturday · 2/24/2024";
   newEvent.append(text);
   text = document.createElement("p");
-  text.innerText = "Queens, NY";
+  text.innerText = "227-11 Linden Blvd.";
+  newEvent.append(text);
+  text = document.createElement("p");
+  text.innerText = "St. Albans, NY";
   newEvent.append(text);
 
   App.append(logoContainer, aboutContainer, eventsContainer);
