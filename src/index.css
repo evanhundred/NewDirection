@@ -8,7 +8,7 @@
     font-family: Helvetica, Arial, sans-serif;
 
     .logo-container,
-    #title-container,
+    #about-container,
     #events-container {
       width: 100vw;
       display: flex;
@@ -24,7 +24,14 @@
       }
     }
 
+    /* #about-container,
     #events-container {
+        flex-direction: column;
+        align-items: center; */
+
+    #about-container,
+    #events-container {
+      margin: 15px 0;
       flex-direction: column;
       align-items: center;
 
@@ -39,22 +46,28 @@
       }
 
       .content {
-        margin-top: 15px;
-        .new-event {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          border-radius: 8px;
-          padding: 10px;
-          background: rgba(128, 128, 128, 0.3);
-          h3 {
-            font-size: 30px;
-            font-weight: 500;
-          }
+        margin: 15px 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        padding: 10px;
+        background: rgba(128, 128, 128, 0.3);
 
-          p {
-            font-size: 25px;
-          }
+        h3 {
+          /* display: flex;
+          justify-content: center;
+          align-items: center; */
+          width: max-content;
+          font-size: 25px;
+          font-weight: 600;
+        }
+
+        p {
+          text-align: center;
+          font-size: 25px;
+          max-width: 600px;
+          min-width: 300px;
         }
       }
     }

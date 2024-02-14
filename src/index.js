@@ -8,11 +8,24 @@ const render = () => {
   logoContainer.append(logoImg);
   logoImg.src = "../assets/nd_logo.png";
 
-  const titleContainer = document.createElement("div");
-  titleContainer.id = "title-container";
-  const h1 = document.createElement("h1");
-  titleContainer.append(h1);
-  h1.innerText = "N D";
+  const expandAbout = (e) => {
+    e.preventDefault();
+    aboutContainer.append(aboutContent);
+  };
+
+  const aboutContainer = document.createElement("div");
+  aboutContainer.id = "about-container";
+  const aboutH2 = document.createElement("h2");
+  aboutContainer.append(aboutH2);
+  aboutH2.innerText = "Who we are";
+  aboutH2.addEventListener("click", expandAbout);
+
+  const aboutContent = document.createElement("div");
+  aboutContent.className = "content";
+  const aboutP = document.createElement("p");
+  aboutContent.append(aboutP);
+  aboutP.innerText =
+    "New Direction is a musical family seeking to manifest God's purpose.";
 
   const expandEvents = (e) => {
     e.preventDefault();
@@ -27,12 +40,11 @@ const render = () => {
   eventsH2.addEventListener("click", expandEvents);
 
   const eventsContent = document.createElement("div");
-  eventsContent.className = "content";
-  // const eventsArray = [];
+  eventsContent.className = "content-container";
 
   let newEvent = document.createElement("div");
   eventsContent.append(newEvent);
-  newEvent.className = "new-event";
+  newEvent.className = "content";
   let header = document.createElement("h3");
   header.innerText = "Black History Celebration";
   newEvent.append(header);
@@ -44,7 +56,7 @@ const render = () => {
   text.innerText = "Queens, NY";
   newEvent.append(text);
 
-  App.append(logoContainer, titleContainer, eventsContainer);
+  App.append(logoContainer, aboutContainer, eventsContainer);
 
   const root = document.getElementById("root");
   root.append(App);
