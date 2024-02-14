@@ -1,0 +1,15 @@
+@import "./reset.css";
+
+#root {
+  #app-container {
+    .logo-container {
+      background: black;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 100px;
+      }
+    }
+  }
+}
