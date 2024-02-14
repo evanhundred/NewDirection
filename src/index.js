@@ -9,7 +9,7 @@ const render = () => {
   logoContainer.className = "logo-container";
   const logoImg = document.createElement("img");
   logoContainer.append(logoImg);
-  logoImg.src = "../assets/nd_logo.png";
+  logoImg.src = "./assets/nd_logo.png";
 
   const expandAbout = (e) => {
     e.preventDefault();
@@ -71,7 +71,7 @@ const render = () => {
   rel = "noopener noreferrer";
   let img = document.createElement("img");
   a.append(img);
-  img.src = "../assets/instagram.png";
+  img.src = "./assets/instagram.png";
 
   const footer = document.createElement("div");
   footer.id = "footer";
