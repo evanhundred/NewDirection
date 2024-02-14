@@ -1,6 +1,9 @@
 const render = () => {
   const App = document.createElement("div");
   App.id = "app-container";
+  const contentContainer = document.createElement("div");
+  App.append(contentContainer);
+  contentContainer.id = "content-container";
 
   const logoContainer = document.createElement("div");
   logoContainer.className = "logo-container";
@@ -59,7 +62,33 @@ const render = () => {
   text.innerText = "St. Albans, NY";
   newEvent.append(text);
 
-  App.append(logoContainer, aboutContainer, eventsContainer);
+  const instagram = document.createElement("div");
+  instagram.id = "instagram-container";
+  let a = document.createElement("a");
+  instagram.append(a);
+  a.href = "https://www.instagram.com/newdirection.music";
+  a.target = "_blank";
+  rel = "noopener noreferrer";
+  let img = document.createElement("img");
+  a.append(img);
+  img.src = "../assets/instagram.png";
+
+  const footer = document.createElement("div");
+  footer.id = "footer";
+  let p = document.createElement("p");
+  footer.append(p);
+  p.innerHTML =
+    '<a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icons created by Freepik - Flaticon</a>';
+
+  contentContainer.append(
+    logoContainer,
+    instagram,
+    aboutContainer,
+    eventsContainer,
+    footer
+  );
+
+  App.append(footer);
 
   const root = document.getElementById("root");
   root.append(App);

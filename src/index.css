@@ -2,20 +2,25 @@
 
 #root {
   #app-container {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     background: rgb(230, 221, 221);
     font-size: 30px;
     font-family: Helvetica, Arial, sans-serif;
 
     .logo-container,
     #about-container,
-    #events-container {
+    #events-container,
+    #instagram-container {
       width: 100vw;
       display: flex;
       justify-content: center;
     }
 
     .logo-container {
+      margin-bottom: 20px;
       background: black;
       img {
         object-fit: cover;
@@ -29,6 +34,28 @@
         flex-direction: column;
         align-items: center; */
 
+    #instagram-container {
+      img {
+        width: 30px;
+      }
+    }
+
+    #footer {
+      /* padding: max(60vw, 20px) 0 0 0; */
+      p {
+        /* margin-right: 5vw; */
+        margin: 0 5vw 10px 0;
+        text-align: right;
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.5);
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    }
+
+    #instagram-container,
     #about-container,
     #events-container {
       margin: 15px 0;
