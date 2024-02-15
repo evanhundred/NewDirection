@@ -42,7 +42,8 @@
 
     #footer {
       /* padding: max(60vw, 20px) 0 0 0; */
-      p {
+      p,
+      a {
         /* margin-right: 5vw; */
         margin: 0 5vw 10px 0;
         text-align: right;
