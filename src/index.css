@@ -29,11 +29,6 @@
       }
     }
 
-    /* #about-container,
-    #events-container {
-        flex-direction: column;
-        align-items: center; */
-
     #instagram-container {
       img {
         width: 30px;
@@ -41,10 +36,8 @@
     }
 
     #footer {
-      /* padding: max(60vw, 20px) 0 0 0; */
       p,
       a {
-        /* margin-right: 5vw; */
         margin: 0 5vw 10px 0;
         text-align: right;
         font-size: 10px;
@@ -83,9 +76,6 @@
         background: rgba(128, 128, 128, 0.3);
 
         h3 {
-          /* display: flex;
-          justify-content: center;
-          align-items: center; */
           width: max-content;
           font-size: 25px;
           font-weight: 600;
