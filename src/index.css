@@ -1,7 +1,7 @@
 @import "./reset.css";
 
 #root {
-  #app-container {
+  & #app-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,53 +10,53 @@
     font-size: 30px;
     font-family: Helvetica, Arial, sans-serif;
 
-    .logo-container,
-    #about-container,
-    #events-container,
-    #instagram-container {
+    & .logo-container,
+    & #about-container,
+    & #events-container,
+    & #instagram-container {
       width: 100vw;
       display: flex;
       justify-content: center;
     }
 
-    .logo-container {
+    & .logo-container {
       margin-bottom: 20px;
       background: black;
-      img {
+      & img {
         object-fit: cover;
         /* width: 100%; */
         /* height: 200px; */
       }
     }
 
-    #instagram-container {
-      img {
+    & #instagram-container {
+      & img {
         width: 30px;
       }
     }
 
-    #footer {
-      p,
-      a {
+    & #footer {
+      & p,
+      & a {
         margin: 0 5vw 10px 0;
         text-align: right;
         font-size: 10px;
         color: rgba(0, 0, 0, 0.5);
-        a {
+        & a {
           color: inherit;
           text-decoration: none;
         }
       }
     }
 
-    #instagram-container,
-    #about-container,
-    #events-container {
+    & #instagram-container,
+    & #about-container,
+    & #events-container {
       margin: 15px 0;
       flex-direction: column;
       align-items: center;
 
-      h2 {
+      & h2 {
         cursor: pointer;
         font-size: 30px;
         font-weight: 500;
@@ -66,7 +66,7 @@
         }
       }
 
-      .content {
+      & .content {
         margin: 15px 30px 0;
         display: flex;
         flex-direction: column;
@@ -75,13 +75,13 @@
         padding: 10px;
         background: rgba(128, 128, 128, 0.3);
 
-        h3 {
+        & h3 {
           width: max-content;
           font-size: 25px;
           font-weight: 600;
         }
 
-        p {
+        & p {
           text-align: center;
           font-size: 25px;
           max-width: 600px;
