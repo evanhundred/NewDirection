@@ -99,7 +99,7 @@ const render = () => {
   let p = document.createElement("p");
   footer.append(p);
   p.innerHTML =
-    '<a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icons created by Freepik - Flaticon</a>';
+    '<a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icon created by Freepik - Flaticon</a>';
 
   contentContainer.append(
     logoContainer,
