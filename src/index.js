@@ -66,7 +66,8 @@ const render = () => {
   instagram.id = "instagram-container";
   let a = document.createElement("a");
   instagram.append(a);
-  a.href = "https://www.instagram.com/_u/newdirection.music";
+  a.href = "instagram://user?username=newdirection.music";
+  // a.href = "https://www.instagram.com/_u/newdirection.music";
   // a.href = "https://www.instagram.com/newdirection.music";
   a.target = "_blank";
   rel = "noopener noreferrer";
