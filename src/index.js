@@ -11,9 +11,16 @@ const render = () => {
   logoContainer.append(logoImg);
   logoImg.src = "./assets/nd_logo.png";
 
-  const expandAbout = (e) => {
-    e.preventDefault();
+  const collapseAbout = (element) => {
+    aboutContent.remove();
+    element.removeEventListener("click", collapseAbout);
+    element.addEventListener("click", () => expandAbout(element));
+  };
+
+  const expandAbout = (element) => {
     aboutContainer.append(aboutContent);
+    element.removeEventListener("click", expandAbout);
+    element.addEventListener("click", () => collapseAbout(element));
   };
 
   const aboutContainer = document.createElement("div");
@@ -21,7 +28,7 @@ const render = () => {
   const aboutH2 = document.createElement("h2");
   aboutContainer.append(aboutH2);
   aboutH2.innerText = "Who we are";
-  aboutH2.addEventListener("click", expandAbout);
+  aboutH2.addEventListener("click", () => expandAbout(aboutH2));
 
   const aboutContent = document.createElement("div");
   aboutContent.className = "content";
@@ -30,9 +37,16 @@ const render = () => {
   aboutP.innerText =
     "New Direction is a musical family seeking to manifest God's purpose.";
 
-  const expandEvents = (e) => {
-    e.preventDefault();
+  const collapseEvents = (element) => {
+    eventsContent.remove();
+    element.removeEventListener("click", collapseEvents);
+    element.addEventListener("click", () => expandEvents(element));
+  };
+
+  const expandEvents = (element) => {
     eventsContainer.append(eventsContent);
+    element.removeEventListener("click", expandEvents);
+    element.addEventListener("click", () => collapseEvents(element));
   };
 
   const eventsContainer = document.createElement("div");
@@ -40,7 +54,7 @@ const render = () => {
   const eventsH2 = document.createElement("h2");
   eventsContainer.append(eventsH2);
   eventsH2.innerText = "events";
-  eventsH2.addEventListener("click", expandEvents);
+  eventsH2.addEventListener("click", () => expandEvents(eventsH2));
 
   const eventsContent = document.createElement("div");
   eventsContent.className = "content-container";
