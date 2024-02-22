@@ -115,12 +115,24 @@ const render = () => {
   p.innerHTML =
     '<a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icon created by Freepik - Flaticon</a>';
 
+  const ndIcon = document.createElement("div");
+
+  ndIcon.id = "icon";
+  img = document.createElement("img");
+  img.id = "n";
+  img.src = "./assets/icon/letter-n.png";
+  ndIcon.append(img);
+  img = document.createElement("img");
+  img.id = "d";
+  img.src = "./assets/icon/letter-d.png";
+  ndIcon.append(img);
+
   contentContainer.append(
     logoContainer,
     instagram,
     aboutContainer,
     eventsContainer,
-    footer
+    ndIcon
   );
 
   App.append(footer);
