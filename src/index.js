@@ -67,7 +67,7 @@ const render = () => {
   newEvent.append(header);
 
   let text = document.createElement("p");
-  text.innerText = "Saturday · 2/24/2024";
+  text.innerText = "Saturday · 2/24/2024 · 5 PM";
   newEvent.append(text);
   text = document.createElement("p");
   text.innerText = "227-11 Linden Blvd.";
