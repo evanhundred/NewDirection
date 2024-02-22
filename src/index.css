@@ -36,6 +36,24 @@
       }
     }
 
+    & #icon {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      & img {
+        &#n {
+          margin-right: -7px;
+          width: 40px;
+          height: 40px;
+        }
+        &#d {
+          margin-left: -7px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+
     & #footer {
       & p,
       & a {
