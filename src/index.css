@@ -22,9 +22,11 @@
 
     & .logo-container {
       margin-bottom: 20px;
-      background: black;
+      background: rgb(26, 26, 26);
+      background: linear-gradient(0.25turn, black, rgb(36, 21, 21), black);
       & img {
         object-fit: cover;
+        max-width: 800px;
       }
     }
 
