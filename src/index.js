@@ -1,4 +1,4 @@
-import Banner from "/src/banner.js";
+import Banner from "./banner.js";
 import About from "./about.js";
 import Events from "./events.js";
 import Instagram from "./instagram.js";
