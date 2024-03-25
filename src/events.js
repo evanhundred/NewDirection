@@ -1,4 +1,5 @@
 import event01 from './events-list/01.js';
+import event02 from './events-list/02.js';
 
 const Events = () => {
   const collapseEvents = (element) => {
@@ -22,6 +23,13 @@ const Events = () => {
 
   const eventsContent = document.createElement('div');
   eventsContent.className = 'content-container';
+
+  eventsContent.append(event02());
+
+  let text = document.createElement('h4');
+  text.className = 'past-events';
+  text.innerText = 'Past events:';
+  eventsContent.append(text);
 
   eventsContent.append(event01());
 
