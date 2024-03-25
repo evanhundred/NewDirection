@@ -1,11 +1,17 @@
 import Banner from "./banner.js";
 import About from "./about.js";
-import Events from "./events.js";
+import Events from "./Events/index.js";
 import Instagram from "./instagram.js";
 import NdLogo from "./nd-logo.js";
 import Footer from "./footer.js";
 
 const render = () => {
+  // require.config({
+  //   paths: {
+  //     events: "Events"
+  //   }
+  // });
+
   const App = document.createElement("div");
   App.id = "app-container";
   const contentContainer = document.createElement("div");
