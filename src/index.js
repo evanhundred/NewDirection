@@ -1,9 +1,9 @@
-import Banner from "./banner";
-import About from "./about";
-import Events from "./events";
-import Instagram from "./instagram";
-import NdLogo from "./nd-logo";
-import Footer from "./footer";
+import Banner from "/src/banner.js";
+import About from "./about.js";
+import Events from "./events.js";
+import Instagram from "./instagram.js";
+import NdLogo from "./nd-logo.js";
+import Footer from "./footer.js";
 
 const render = () => {
   const App = document.createElement("div");
