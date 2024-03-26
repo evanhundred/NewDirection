@@ -1,0 +1,31 @@
+#root {
+  & #app-container {
+    & .banner-container {
+      margin-bottom: 20px;
+      background: rgb(26, 26, 26);
+      background: linear-gradient(
+        0.25turn,
+        rgb(24, 14, 14),
+        black,
+        black,
+        black,
+        black,
+        black,
+        black,
+        black,
+        black,
+        black,
+        black,
+        black,
+        black,
+        black,
+        black,
+        rgb(24, 14, 14)
+      );
+      & img {
+        object-fit: cover;
+        max-width: 800px;
+      }
+    }
+  }
+}

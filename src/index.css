@@ -1,4 +1,10 @@
 @import './reset.css';
+@import './about/index.css';
+@import './banner/index.css';
+@import './events/index.css';
+@import './footer/index.css';
+@import './instagram/index.css';
+@import './nd-logo/index.css';
 
 #root {
   & #app-container {
@@ -20,7 +26,7 @@
       justify-content: center;
     }
 
-    & .banner-container {
+    /* & .banner-container {
       margin-bottom: 20px;
       background: rgb(26, 26, 26);
       background: linear-gradient(
@@ -46,14 +52,14 @@
         object-fit: cover;
         max-width: 800px;
       }
-    }
+    } */
 
-    & #instagram-container {
+    /* & #instagram-container {
       & img {
         width: 30px;
       }
-    }
-
+    } */
+    /*
     & #icon {
       margin-top: 10px;
       display: flex;
@@ -75,9 +81,9 @@
           }
         }
       }
-    }
+    } */
 
-    & #footer {
+    /* & #footer {
       & p,
       & a {
         margin: 0 5vw 10px 0;
@@ -89,7 +95,7 @@
           text-decoration: none;
         }
       }
-    }
+    } */
 
     & #instagram-container,
     & #about-container,
@@ -108,38 +114,38 @@
         }
       }
 
-      & .content-container {
-        & h4.past-events {
+      & .content {
+        margin: 15px 30px;
+        /* margin: 15px 30px 0; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        padding: 10px;
+        background: rgba(128, 128, 128, 0.3);
+
+        & h3 {
+          width: max-content;
+          font-size: 25px;
+          font-weight: 600;
+        }
+
+        & p {
+          text-align: center;
+          font-size: 25px;
+          max-width: 600px;
+          min-width: 300px;
+        }
+      }
+      /* & .content-container { */
+      /* & h4.past-events {
           display: flex;
           justify-content: center;
           font-size: 25px;
           font-weight: 500;
           margin-top: 5px;
-        }
-        & .content {
-          margin: 15px 30px;
-          /* margin: 15px 30px 0; */
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          border-radius: 8px;
-          padding: 10px;
-          background: rgba(128, 128, 128, 0.3);
-
-          & h3 {
-            width: max-content;
-            font-size: 25px;
-            font-weight: 600;
-          }
-
-          & p {
-            text-align: center;
-            font-size: 25px;
-            max-width: 600px;
-            min-width: 300px;
-          }
-        }
-      }
+        } */
+      /* } */
     }
   }
 }

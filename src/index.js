@@ -1,16 +1,16 @@
-import Banner from "./banner.js";
-import About from "./about.js";
-import Events from "./events.js";
-import Instagram from "./instagram.js";
-import NdLogo from "./nd-logo.js";
-import Footer from "./footer.js";
+import Banner from './banner/index.js';
+import About from './about/index.js';
+import Events from './events/index.js';
+import Instagram from './instagram/index.js';
+import NdLogo from './nd-logo/index.js';
+import Footer from './footer/index.js';
 
 const render = () => {
-  const App = document.createElement("div");
-  App.id = "app-container";
-  const contentContainer = document.createElement("div");
+  const App = document.createElement('div');
+  App.id = 'app-container';
+  const contentContainer = document.createElement('div');
   App.append(contentContainer);
-  contentContainer.id = "content-container";
+  contentContainer.id = 'content-container';
 
   const banner = Banner();
   const about = About();
@@ -22,11 +22,11 @@ const render = () => {
   contentContainer.append(banner, instagram, about, events, ndLogo);
   App.append(footer);
 
-  const root = document.getElementById("root");
+  const root = document.getElementById('root');
   root.append(App);
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   render();
 });
 
