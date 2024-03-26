@@ -12,6 +12,7 @@ const Events = () => {
     eventsContainer.append(eventsContent);
     element.removeEventListener('click', expandEvents);
     element.addEventListener('click', () => collapseEvents(element));
+    eventsContainer.classList.add('expanded');
   };
 
   const eventsContainer = document.createElement('div');
