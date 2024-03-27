@@ -4,7 +4,7 @@ const Footer = () => {
   let p = document.createElement('p');
   footer.append(p);
   p.innerHTML =
-    'Instagram logo icon created by <a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Freepik - Flaticon</a>';
+    'Instagram logo icon created by <a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons" target="_blank" rel="noopener noreferrer">Freepik - Flaticon</a>';
 
   return footer;
 };
